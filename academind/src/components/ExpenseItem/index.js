@@ -1,1 +1,1 @@
-export { default } from './ExpenseItem'
+export { default } from './Expenses'

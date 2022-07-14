@@ -1,5 +1,5 @@
-import './index.css'
 import ExpenseDate from "./ExpenseDate";
+import './ExpenseItem.css'
 
 function ExpenseItem({ expenseItem: { date, title, amount }}) {
   return <div className="expense-item">
