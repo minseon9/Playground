@@ -1,4 +1,4 @@
 export const Arguments = {
-  s: 'PAYPALISHIRING',
+  s: 'Apalindromeisaword,phrase,number,orothersequenceofunitsthatcanbereadthesamewayineitherdirection,withgeneralallowancesforadjustmentstopunctuationandworddividers.',
   numRows: 3
 }
