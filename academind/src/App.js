@@ -1,7 +1,8 @@
 import Expenses from './components/ExpenseItem/index';
 import NewExpenseItem from "./components/NewExpenseItem/NewExpenseItem";
+
 function App() {
-  const expenses = [
+  let expenses = [
     {
       id: 1,
       title: "Toilet Paper",
@@ -28,9 +29,13 @@ function App() {
     }
   ]
 
+  const addExpenseItemHandler = (expenseData) => {
+    console.log(expenseData)
+  }
+
   return (
     <div>
-      <NewExpenseItem />
+      <NewExpenseItem onAddExpenseItem={addExpenseItemHandler}/>
       <Expenses expenseList={expenses}/>
     </div>
   );
