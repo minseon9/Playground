@@ -1,0 +1,30 @@
+version: "2"
+authtoken: 2kCHrosW0XpwK3HTusoul0KcPYl_5rYC2gGyVkZPW4ck11mTE
+connect_timeout: 30s
+console_ui: true
+console_ui_color: black
+dns_resolver_ips:
+  - 1.1.1.1
+  - 8.8.8.8
+heartbeat_interval: 1m
+heartbeat_tolerance: 5s
+inspect_db_size: 104857600 # 100mb
+log_level: debug
+log_format: json
+log: /var/log/ngrok.log
+metadata: b8c98bea-98d4-4600-8003-bbfaeae7b9c3
+proxy_url: http://localhost:9150
+remote_management: false
+root_cas: trusted
+update_channel: stable
+update_check: false
+web_addr: localhost:4040
+tunnels:
+  junction2024:
+    addr: 80
+    schemes:
+      - http
+    host_header: "lemontaxi.dev"
+    inspect: true
+    proto: http
+    domain: lemontaxi.dev
